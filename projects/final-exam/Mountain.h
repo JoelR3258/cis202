@@ -1,0 +1,27 @@
+
+
+
+#ifndef Mountain_H
+#define Mountain_H
+#include <iomanip>
+#include <iostream>
+using namespace std;
+
+class Mountain {
+  string name;
+  string country;
+  int elevation;
+
+public:
+  Mountain();
+  Mountain(string name, string country, int elevation);
+  void setName(string name);
+  void setCountry(string country);
+  void setElevation(int elevation);
+  string getName();
+  string getCountry();
+  int getElevation();
+  double toMeters(double elevationInFeets);
+};
+int minElevation(Mountain mountains[]);
+#endif
